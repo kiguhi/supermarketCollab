@@ -1,0 +1,67 @@
+$primaryColor: #020b13;
+$secondaryColor: #005A9C;
+$fontColor: #ffffff;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:link{
+    color: $secondaryColor;
+    font-weight: 600;
+}
+a:visited{
+    color: $secondaryColor;
+}
+a:hover{
+    color: rgb(78, 131, 230);
+}
+body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $primaryColor;
+    color: $fontColor;
+    padding-top: 10vh;
+}
+form{
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid $secondaryColor;
+    outline: none;
+    margin-bottom: 20px;
+    a{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+     }
+     a:link{
+        color: red;
+    }
+    input{
+        border-radius: 12px;
+        border: none;
+        border-bottom: 1px solid $secondaryColor;
+        outline: none;
+        padding: 10px;
+        margin-bottom:20px;
+        background-color: $primaryColor;
+        color: $fontColor;
+        transition: 0.8s;
+    }
+    input:hover{
+        background-color: $secondaryColor;
+    }
+    input[type=button]{
+       width: 100%;
+       background-color: $secondaryColor;
+       margin-top: 20px;
+    }
+    input[type=button]:hover{
+        background-color: rgb(78, 131, 230);
+     }
+
+}
